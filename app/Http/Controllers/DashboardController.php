@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Informasi;
+use App\Models\Karya;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -20,6 +21,7 @@ class DashboardController extends Controller
 
     public function kelolaKarya()
     {
-        return view('dashboard.karya');
+        $karya = Karya::all();
+        return view('dashboard.karya', compact('karya'));
     }
 }

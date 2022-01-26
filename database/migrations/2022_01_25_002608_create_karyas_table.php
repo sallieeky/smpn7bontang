@@ -16,9 +16,12 @@ class CreateKaryasTable extends Migration
         Schema::create('karyas', function (Blueprint $table) {
             $table->id();
             $table->integer("user_id");
-            $table->string("judul");
             $table->string("karya");
-            $table->string("deskripsi");
+            $table->string("format");
+            $table->string("pencipta");
+            $table->string("kelas");
+            $table->string("judul");
+            $table->text("deskripsi");
             $table->timestamps();
         });
     }

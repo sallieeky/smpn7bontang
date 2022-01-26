@@ -170,6 +170,10 @@
 
 
 	<script>
+		const notify = document.getElementById("notify-custom")
+      setTimeout(() => {
+        notify.classList.add("notyf__toast--disappear")
+      }, 7500)
 
 		document.addEventListener("DOMContentLoaded", function() {
 					// Datatables Responsive
@@ -402,6 +406,8 @@
 			});
 		});
 	</script>
+
+	@yield('script')
 
 </body>
 

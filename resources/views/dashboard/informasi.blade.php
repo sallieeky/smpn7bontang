@@ -49,9 +49,10 @@
                   <tr>
                     <th>No.</th>
                     <th>Di Upload Oleh</th>
+                    <th>Tanggal</th>
                     <th>Gambar</th>
                     <th>Judul</th>
-                    <th style="width: 50%">Isi</th>
+                    <th style="width: 30%">Isi</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -60,6 +61,7 @@
                   <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $i->user->name }}</td>
+                    <td>{{ date('M, d Y', strtotime($i->created_at)) }}</td>
                     <td>
                       <img src="{{ asset("upload/informasi/" . $i->gambar) }}" alt="{{ $i->judul }}" style="max-height: 100px" class="img-responsive img-thumbnail">
                     </td>
@@ -82,6 +84,10 @@
   </div>
 </main>
 
+@if (session("pesan"))
+<div class="notyf" style="justify-content: flex-end; align-items: flex-end;"><div id="notify-custom" class="notyf__toast notyf__toast--lower"><div class="notyf__wrapper"><div class="notyf__icon"><i class="notyf__icon--success" style="color: rgb(59, 125, 221);"></i></div><div class="notyf__message">{{ session("pesan") }}</div></div><div class="notyf__ripple" style="background: rgb(59, 125, 221);"></div></div></div>
+@endif
+
 
 @foreach ($informasi as $i)
   <!-- Edit Modal -->
@@ -101,7 +107,7 @@
             </div>
             <div class="form-group mb-3">
               <label for="isi">Isi</label>
-              <textarea class="form-control" id="isi" rows="10" name="isi" placeholder="Isi Informasi" required>{{ str_replace('<br />', '', $i->isi) }}</textarea>
+              <textarea class="form-control" id="isi" rows="17" name="isi" placeholder="Isi Informasi" required>{{ str_replace('<br />', '', $i->isi) }}</textarea>
             </div>
             <div class="form-group mb-3">
               <label for="gambar">Gambar</label>
@@ -111,6 +117,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
           <button type="submit" class="btn btn-primary" name="id" value="{{ $i->id }}">Edit</button>
+        </form>
         </div>
       </div>
     </div>
@@ -137,7 +144,7 @@
     </div>
   </div>
   <!-- END Hapus Modal -->
-  
+
 @endforeach
 
 @endsection

@@ -18,7 +18,7 @@ class CreateInformasisTable extends Migration
             $table->integer("user_id");
             $table->string("judul");
             $table->string("gambar");
-            $table->string("isi");
+            $table->text("isi");
             $table->timestamps();
         });
     }

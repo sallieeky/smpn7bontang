@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InformasiController;
+use App\Http\Controllers\KaryaController;
 use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,9 +33,14 @@ Route::get('/logout', [AuthController::class, "logout"]);
 Route::post('/login', [AuthController::class, "loginPost"]);
 
 Route::get('/dashboard', [DashboardController::class, "home"]);
+
 Route::get('/kelola-informasi', [DashboardController::class, "kelolaInformasi"]);
 Route::post('/kelola-informasi/tambah', [InformasiController::class, "tambahInformasi"]);
 Route::post('/kelola-informasi/edit', [InformasiController::class, "editInformasi"]);
 Route::get('/kelola-informasi/hapus/{informasi}', [InformasiController::class, "hapusInformasi"]);
 
 Route::get('/kelola-karya', [DashboardController::class, "kelolaKarya"]);
+Route::get('/kelola-karya/lihat/{karya}', [KaryaController::class, "showKarya"]);
+Route::post('/kelola-karya/tambah', [KaryaController::class, "tambahKarya"]);
+Route::post('/kelola-karya/edit', [KaryaController::class, "editKarya"]);
+Route::get('/kelola-karya/hapus/{karya}', [KaryaController::class, "hapusKarya"]);

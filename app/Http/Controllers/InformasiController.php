@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Informasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Symfony\Polyfill\Intl\Idn\Info;
 
 class InformasiController extends Controller
 {
@@ -21,12 +20,18 @@ class InformasiController extends Controller
         $fileName = $file->getClientOriginalName();
         $destinationPath = public_path() . '/upload/informasi';
         $file->move($destinationPath, $fileName);
-        return back();
+        return back()->with("pesan", "Informasi berhasil ditambahkan");
     }
 
     public function editInformasi(Request $request)
     {
         if ($request->hasFile('gambar')) {
+            // remove old file
+            $oldFileName = Informasi::find($request->id)
+                ->gambar;
+            $oldFile = public_path() . '/upload/informasi/' . $oldFileName;
+            unlink($oldFile);
+
             $file = $request->file('gambar');
             $fileName = $file->getClientOriginalName();
             $destinationPath = public_path() . '/upload/informasi';
@@ -41,7 +46,7 @@ class InformasiController extends Controller
                 'gambar' => $fileName,
                 'isi' => nl2br($request->isi)
             ]);
-        return back();
+        return back()->with("pesan", "Informasi berhasil diubah");
     }
 
     public function hapusInformasi(Informasi $informasi)
@@ -53,6 +58,6 @@ class InformasiController extends Controller
         }
         $informasi->delete();
 
-        return back();
+        return back()->with("pesan", "Informasi berhasil dihapus");
     }
 }
