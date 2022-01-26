@@ -32,6 +32,27 @@
       </div>
     </div>
 
+    <div class="row">
+      <h1 class="h3 mb-3">Struktur Organisasi SMPN 7 Bontang</h1>
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <form action="/ubah-struktur-organisasi" method="post" enctype="multipart/form-data">
+              @csrf
+              <label for="inputGroupFile04">Ubah Struktur Organisasi</label>
+              <div class="input-group">
+                <input type="file" class="form-control" accept="image/*" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" name="gambar" aria-label="Upload">
+                <button class="btn btn-outline-primary" type="submit" id="inputGroupFileAddon04">Ubah</button>
+              </div>
+            </form>                
+          </div>
+          <div class="card-body">
+            <img src="/landing/images/{{ $so->gambar }}" width="100%" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="row">
       <h1 class="h3 mb-3">Kelola Website SMPN 7 Bontang</h1>
@@ -49,7 +70,7 @@
                 <a style="font-size: 1.2em" href="/kelola-karya"><i class="align-middle me-2" data-feather="image"></i><span class="align-middle">Kelola Karya Siswa</span></a>
               </div>
               <div class="col-md-4">
-                <a style="font-size: 1.2em" href="#"><i class="align-middle me-2" data-feather="image"></i><span class="align-middle">Kelola Karya Siswa</span></a>
+                <a style="font-size: 1.2em" href="#"><i class="fas fa-chalkboard-teacher align-middle me-2"></i><span class="align-middle">Kelola Pegawai</span></a>
               </div>
             </div>
           </div>
@@ -58,7 +79,7 @@
     </div>
 
 
-    <div class="row">
+    {{-- <div class="row">
       <h1 class="h3 mb-3">Statistik Pengunjung</h1>
       <div class="col-xl-12 col-xxl-12 d-flex">
         <div class="w-100">
@@ -146,7 +167,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
+
+    @if (session("pesan"))
+    <div class="notyf" style="justify-content: flex-end; align-items: flex-end;"><div id="notify-custom" class="notyf__toast notyf__toast--lower"><div class="notyf__wrapper"><div class="notyf__icon"><i class="notyf__icon--success" style="color: rgb(59, 125, 221);"></i></div><div class="notyf__message">{{ session("pesan") }}</div></div><div class="notyf__ripple" style="background: rgb(59, 125, 221);"></div></div></div>
+    @endif
 
   </div>
 </main>

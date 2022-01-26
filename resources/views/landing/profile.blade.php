@@ -12,8 +12,7 @@
            <div class="row">
              <div class="col-md-8 col-md-offset-2 text-center slider-text">
                <div class="slider-text-inner">
-                 <h1 class="heading-section">Profile SMP Negeri 7 Bontang</h1>
-                {{-- <h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2> --}}
+                 <h1 class="heading-section">Profil SMP Negeri 7 Bontang</h1>
                </div>
              </div>
            </div>
@@ -58,7 +57,7 @@
 
     <div class="row text-center">
       <div class="col-md-12">
-        <img src="landing/images/strukturorganisasi.jpg" alt="Struktur Organisasi">
+        <img src="landing/images/strukturorganisasi.jpg" width="100%" alt="Struktur Organisasi">
       </div>
     </div>
     {{-- <div class="row">

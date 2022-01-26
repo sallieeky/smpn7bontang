@@ -50,4 +50,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(Karya::class);
     }
+    public function strukturOrganisasi()
+    {
+        return $this->hasOne(StrukturOrganisasi::class);
+    }
 }

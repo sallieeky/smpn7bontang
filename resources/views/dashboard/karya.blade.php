@@ -106,9 +106,9 @@
                   <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>
-                      <a href="/kelola-karya/lihat/{{ $k->id }}" target="_blank">
+                      <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#karya-modal-{{ $k->id }}">
                         <i class="fas fa-eye"></i> Lihat Karya <i class="fas fa-external-link-alt"></i>
-                      </a>
+                      </button>
                     </td>
                     <td>{{ $k->format }}</td>
                     <td>{{ $k->judul }}</td>
@@ -220,6 +220,44 @@
     </div>
   </div>
   <!-- END Hapus Modal -->
+  
+  <!-- Karya Modal -->
+  
+  <div class="modal fade" id="karya-modal-{{ $k->id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{ $k->judul }} - Karya {{ $k->pencipta }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body m-3">
+          <div class="row">
+            <div class="col-md-12">
+              @if($k->format == "video")
+              <video class="w-100" controls>
+                <source src="{{asset('upload/karya/' . $k->format . "/" . $k->karya)}}" type="video/mp4">
+              </video>
+              @elseif($k->format == "audio")
+              <audio controls class="w-100">
+                <source src="{{asset('upload/karya/' . $k->format . "/" . $k->karya)}}" type="audio/mpeg">
+              </audio>
+              @elseif($k->format == "image")
+              <img src="{{asset('upload/karya/' . $k->format . "/" . $k->karya)}}" class="w-100" alt="{{ $k->judul }}">
+              @endif
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          {{-- <a href="/kelola-karya/hapus/{{ $k->id }}" class="btn btn-danger">Hapus</a> --}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Karya Modal -->
+
+
 
 @endforeach
 

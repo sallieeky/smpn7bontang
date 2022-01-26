@@ -41,7 +41,7 @@
 
 				<ul class="sidebar-nav">
 					<li class="sidebar-header">
-						Halaman Pribadi
+						Halaman Admin
 					</li>
 					<li class="sidebar-item @yield("dashboard-active")">
 						<a class="sidebar-link" href="/dashboard">
@@ -57,67 +57,25 @@
 						<a class="sidebar-link" href="/kelola-karya">
               <i class="align-middle" data-feather="image"></i> <span class="align-middle">Kelola Karya</span>
             </a>
-					</li>					
-					{{-- <li class="sidebar-item @yield("profile-active")">
-						<a class="sidebar-link" href="/profile">
-              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
-							@if (Auth::user()->alamat && Auth::user()->kota && Auth::user()->provinsi && Auth::user()->kode_pos && Auth::user()->no_telp)
-							@else
-								<span class="sidebar-badge badge bg-warning">Lengkapi Data</span>
-							@endif
+					</li>
+					<li class="sidebar-item @yield("pegawai-active")">
+						<a class="sidebar-link" href="/kelola-pegawai">
+              <i class="fas fa-chalkboard-teacher align-middle"></i> <span class="align-middle">Kelola Pegawai</span>
             </a>
-					</li> --}}
-					{{-- @if (Auth::user()->role == "user")
-					<li class="sidebar-item @yield("keranjang-active")">
-						<a class="sidebar-link" href="/keranjang">
-							<i class="align-middle" data-feather="shopping-cart"></i> <span class="align-middle">Keranjang</span>
-							<span class="sidebar-badge badge bg-primary">{{ count(Auth::user()->keranjang->where("status", "belum")) }}</span>
-						</a>
 					</li>
-					<li class="sidebar-item @yield("invoice-active")">
-						<a class="sidebar-link" href="/invoice">
-							<i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Invoice</span>
-						</a>
-					</li>
-					@endif --}}
-
-					{{-- @if (Auth::user()->role == "admin")
 					<li class="sidebar-header">
-						Halaman Admin
+						Authenticate
 					</li>
-					<li class="sidebar-item @yield("kelola-active")">
-						<a class="sidebar-link" href="/kelola">
-              <i class="align-middle" data-feather="package"></i> <span class="align-middle">Kelola SIKENING</span>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Kelola Admin</span>
             </a>
 					</li>
-					<li class="sidebar-item @yield("keuangan-active")">
-						<a class="sidebar-link" href="/keuangan">
-              <i class="align-middle" data-feather="dollar-sign"></i> <span class="align-middle">Kelola Keuangan</span>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/logout">
+              <i class="align-middle" data-feather="log-out"></i> <span class="align-middle">Log Out</span>
             </a>
 					</li>
-					<li class="sidebar-item @yield("pesanan-active")">
-						<a class="sidebar-link" href="/pesanan">
-              <i class="align-middle" data-feather="clipboard"></i> <span class="align-middle">Kelola Pesanan</span>
-							<span class="sidebar-badge badge bg-primary">{{ count(Invoice::where("status", "belum")->get()) }}</span>
-            </a>
-					</li>
-					<li class="sidebar-item @yield("akun_pengguna-active")">
-						<a class="sidebar-link" href="/akun-pengguna">
-              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Akun Pengguna</span>
-            </a>
-					</li>
-					@endif --}}
-
-					{{-- @if (Auth::user()->role == "user") --}}
-					{{-- <li class="sidebar-header">
-						Halaman SIKENING
-					</li>
-					<li class="sidebar-item @yield("menu-active")">
-						<a class="sidebar-link" href="/menu">
-              <i class="align-middle" data-feather="shopping-bag"></i> <span class="align-middle">Menu SIKENING</span>
-            </a>
-					</li> --}}
-					{{-- @endif --}}
 				</ul>
 			</div>
 		</nav>
@@ -135,14 +93,9 @@
                 <i class="align-middle" data-feather="settings"></i>
               </a>
 
-							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+							<a class="nav-link  d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
                 <img src="logo.png" style="object-fit: cover" class="avatar img-fluid rounded-circle rounded me-1" alt="SMPN 7 Bontang" /> <span class="text-dark">SMP Negeri 7 Bontang</span>
               </a>
-							<div class="dropdown-menu dropdown-menu-end">
-								<a class="dropdown-item" href="/profile"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="/logout"><i class="align-middle me-1" data-feather="log-out"></i> Log out</a>
-							</div>
 						</li>
 					</ul>
 				</div>
