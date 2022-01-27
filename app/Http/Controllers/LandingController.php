@@ -2,23 +2,30 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Informasi;
+use App\Models\Pegawai;
+use App\Models\StrukturOrganisasi;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
 {
     public function home()
     {
-        return view("landing.home");
+        $informasi = Informasi::all();
+        return view("landing.home", compact('informasi'));
     }
 
     public function profile()
     {
-        return view("landing.profile");
+        $so = StrukturOrganisasi::latest()->first();
+        return view("landing.profile", compact('so'));
     }
 
-    public function guru()
+    public function pegawai()
     {
-        return view("landing.guru");
+        $guru = Pegawai::where('posisi', 'guru')->get();
+        $tendik = Pegawai::where('posisi', 'tendik')->get();
+        return view("landing.pegawai", compact('guru', 'tendik'));
     }
 
     public function perpustakaan()

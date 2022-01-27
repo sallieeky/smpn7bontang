@@ -91,7 +91,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="row fh5co-bg-section" style="padding: 12px; margin: 16px 0">
+				{{-- <div class="row fh5co-bg-section" style="padding: 12px; margin: 16px 0">
 					<div class="col-md-12">
 						<h3 class="text-bold">Kontak</h3>
 						<ul class="list-unstyled">
@@ -102,7 +102,7 @@
 							<li><a href="#">Pengumuman 5</a></li>
 						</ul>
 					</div>
-				</div>
+				</div> --}}
 			</div>
 		</div>
 	</div>
@@ -168,44 +168,29 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Information</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2>Informasi</h2>
+					<p>Informasi terbaru yang diterbitkan oleh SMP Negeri 7 Bontang</p>
 				</div>
 			</div>
 			<div class="row">
+				@if(count($informasi) < 1)
+					<div class="col-md-12 text-center">
+						<h3>Tidak ada informasi</h3>
+					</div>
+				@endif
+				@foreach ($informasi as $i)
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-img-holder" style="background-image: url(landing/images/project-1.jpg);"></a>
+						<a class="blog-img-holder img-thumbnail" style="background-image: url(upload/informasi/{{ $i->gambar }});"></a>
 						<div class="blog-text">
-							<h3><a href="/information/1">Healty Lifestyle &amp; Living</a></h3>
-							<span class="posted_on">March. 15th</span>
-							{{-- <span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span> --}}
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3><a href="/information/1">{{ $i->judul }}</a></h3>
+							<span class="posted_on">{{ $i->created_at->format('M. d Y') }}</span>
+							<p>{{ substr(str_replace('<br />', '', $i->isi), 0, 75) }} @if(strlen($i->isi) > 75) . . . @endif</p>
+							<p></p>
 						</div> 
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-img-holder" style="background-image: url(landing/images/project-2.jpg);"></a>
-						<div class="blog-text">
-							<h3><a href="/information/2">Healty Lifestyle &amp; Living</a></h3>
-							<span class="posted_on">March. 15th</span>
-							{{-- <span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span> --}}
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div> 
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-img-holder" style="background-image: url(landing/images/project-3.jpg);"></a>
-						<div class="blog-text">
-							<h3><a href="/information/3">Healty Lifestyle &amp; Living</a></h3>
-							<span class="posted_on">March. 15th</span>
-							{{-- <span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span> --}}
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div> 
-					</div>
-				</div>
+				@endforeach
 			</div>
 		</div>
 	</div>

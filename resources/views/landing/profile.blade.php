@@ -57,7 +57,7 @@
 
     <div class="row text-center">
       <div class="col-md-12">
-        <img src="landing/images/strukturorganisasi.jpg" width="100%" alt="Struktur Organisasi">
+        <img src="landing/images/{{ $so->gambar }}" width="100%" alt="Struktur Organisasi">
       </div>
     </div>
     {{-- <div class="row">

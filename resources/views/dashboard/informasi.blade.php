@@ -66,7 +66,7 @@
                       <img src="{{ asset("upload/informasi/" . $i->gambar) }}" alt="{{ $i->judul }}" style="max-height: 100px" class="img-responsive img-thumbnail">
                     </td>
                     <td>{{ $i->judul }}</td>
-                    <td>{{ substr(str_replace('<br />', '', $i->isi), 0, 100) . '. . .' }}</td>
+                    <td>{{ substr(str_replace('<br />', '', $i->isi), 0, 100) }} @if(strlen($i->isi) > 100) ... @endif</td>
                     <td class="table-action">
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-modal-{{ $i->id }}">Edit</button>
                       <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus-modal-{{ $i->id }}">Hapus</button>

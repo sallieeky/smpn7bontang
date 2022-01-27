@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LandingController::class, "home"]);
 Route::get('/profile', [LandingController::class, "profile"]);
-Route::get('/guru', [LandingController::class, "guru"]);
+Route::get('/pegawai', [LandingController::class, "pegawai"]);
 Route::get('/perpustakaan', [LandingController::class, "perpustakaan"]);
 Route::get('/ekskul', [LandingController::class, "ekskul"]);
 Route::get('/blog', [LandingController::class, "blog"]);

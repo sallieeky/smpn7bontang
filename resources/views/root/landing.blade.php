@@ -64,8 +64,13 @@
   <link rel="shortcut icon" href="logo.png">
 
 	{{-- Font Awesome 5 --}}
-	<link href="fa/css/all.css" rel="stylesheet"> <!--load all styles -->
+	<link href="fa/css/all.css" rel="stylesheet"> 
+	<!--load all styles -->
 
+	{{-- Style Datatables --}}
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
+
+	
   @yield("css")
 
 	<!-- Modernizr JS -->
@@ -111,7 +116,7 @@
 						<ul>
 							<li class="@yield("home")"><a href="/">Home</a></li>
 							<li class="@yield("profile")"><a href="/profile">Profile</a></li>
-							<li class="@yield("guru")"><a href="/guru">Guru</a></li>
+							<li class="@yield("pegawai")"><a href="/pegawai">Pegawai</a></li>
 							<li class="@yield("perpustakaan")"><a href="/perpustakaan">Perpustakaan</a></li>
 							<li class="@yield("ekskul")"><a href="/ekskul">Ekskul</a></li>
 							<li class="has-dropdown">
@@ -230,6 +235,25 @@
 	<script src="landing/js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="landing/js/main.js"></script>
+	
+	
+	{{-- CDN DataTables --}}
+	<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap5.min.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+					// Datatables Responsive
+					$("#datatables-reponsive").DataTable({
+						responsive: true
+					});
+					$("#datatables-reponsive2").DataTable({
+						responsive: true
+					});
+		});
+	</script>
+
+	
 	<script>
     var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
 

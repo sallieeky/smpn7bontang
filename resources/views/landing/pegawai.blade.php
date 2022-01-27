@@ -1,6 +1,6 @@
 @extends("root.landing")
 @section("title", "Guru")
-@section("guru", "active")
+@section("pegawai", "active")
 @section("content")
 
 <aside id="fh5co-hero">
@@ -12,7 +12,7 @@
            <div class="row">
              <div class="col-md-8 col-md-offset-2 text-center slider-text">
                <div class="slider-text-inner">
-                 <h1 class="heading-section">Guru SMP Negeri 7 Bontang</h1>
+                 <h1 class="heading-section">Pegawai SMP Negeri 7 Bontang</h1>
                 {{-- <h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2> --}}
                </div>
              </div>
@@ -24,6 +24,62 @@
 </aside>
 
 <div id="fh5co-staff">
+  <div class="container">
+    <div class="row" style="margin-bottom: 64px">
+      <h3>Daftar Guru SMP Negeri 7 Bontang</h3>
+      <div class="col-md-12">
+        <table id="datatables-reponsive2" class="table table-striped" style="width:100%">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Nama</th>
+              <th>NIP</th>
+              <th>Bidang Kompetensi</th>
+            </tr>
+          </thead>
+          <tbody>
+            @foreach ($guru as $g)
+            <tr>
+              <td>{{ $loop->iteration }}</td>
+              <td>{{ $g->nama }}</td>
+              <td>{{ $g->nip }}</td>
+              <td>{{ $g->jabatan }}</td>
+            </tr>
+            @endforeach
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div class="row">
+      <h3>Daftar Tenaga Kependidikan SMP Negeri 7 Bontang</h3>
+      <div class="col-md-12">
+        <table id="datatables-reponsive" class="table table-striped" style="width:100%">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Nama</th>
+              <th>NIP</th>
+              <th>Jabatan</th>
+            </tr>
+          </thead>
+          <tbody>
+            @foreach ($tendik as $t)
+            <tr>
+              <td>{{ $loop->iteration }}</td>
+              <td>{{ $t->nama }}</td>
+              <td>{{ $t->nip }}</td>
+              <td>{{ $t->jabatan }}</td>
+            </tr>
+            @endforeach
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{-- <div id="fh5co-staff">
   <div class="container">
     <div class="row">
       <div class="col-md-3 text-center">
@@ -163,6 +219,6 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 @endsection
