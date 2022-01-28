@@ -23,10 +23,10 @@ Route::get('/profile', [LandingController::class, "profile"]);
 Route::get('/pegawai', [LandingController::class, "pegawai"]);
 Route::get('/perpustakaan', [LandingController::class, "perpustakaan"]);
 Route::get('/ekskul', [LandingController::class, "ekskul"]);
-Route::get('/blog', [LandingController::class, "blog"]);
 Route::get('/contact', [LandingController::class, "contact"]);
 
-Route::get('/detail', [LandingController::class, "detail"]);
+Route::get('/informasi', [LandingController::class, "informasi"]);
+Route::get('/informasi/{informasi}', [LandingController::class, "informasiDetail"]);
 
 Route::get('/login', [AuthController::class, "login"])->name('login')->middleware('guest');
 Route::post('/login', [AuthController::class, "loginPost"]);

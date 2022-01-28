@@ -181,9 +181,9 @@
 				@foreach ($informasi as $i)
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a class="blog-img-holder img-thumbnail" style="background-image: url(upload/informasi/{{ $i->gambar }});"></a>
+						<a class="blog-img-holder img-thumbnail" style="background-image: url(/upload/informasi/{{ $i->gambar }}); object-fit: contain;"></a>
 						<div class="blog-text">
-							<h3><a href="/information/1">{{ $i->judul }}</a></h3>
+							<h3><a href="/informasi/{{ $i->id }}">{{ $i->judul }}</a></h3>
 							<span class="posted_on">{{ $i->created_at->format('M. d Y') }}</span>
 							<p>{{ substr(str_replace('<br />', '', $i->isi), 0, 75) }} @if(strlen($i->isi) > 75) . . . @endif</p>
 							<p></p>

@@ -11,7 +11,7 @@ class LandingController extends Controller
 {
     public function home()
     {
-        $informasi = Informasi::all();
+        $informasi = Informasi::orderBy('created_at', 'desc')->take(6)->get();
         return view("landing.home", compact('informasi'));
     }
 
@@ -32,19 +32,22 @@ class LandingController extends Controller
     {
         return view("landing.perpustakaan");
     }
-    public function detail()
-    {
-        return view("landing.information_detail");
-    }
 
     public function ekskul()
     {
         return view("landing.ekskul");
     }
 
-    public function blog()
+    public function informasi()
     {
-        return view("landing.blog");
+        $informasi = Informasi::orderBy('created_at', 'desc')->get();
+        return view("landing.informasi", compact('informasi'));
+    }
+
+    public function informasiDetail(Informasi $informasi)
+    {
+        $informasiRandom = Informasi::inRandomOrder()->take(3)->get();
+        return view("landing.informasi_detail", compact('informasi', 'informasiRandom'));
     }
 
     public function contact()

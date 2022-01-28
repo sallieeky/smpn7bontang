@@ -38,33 +38,33 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="landing/css/animate.css">
+	<link rel="stylesheet" href="/landing/css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="landing/css/icomoon.css">
+	<link rel="stylesheet" href="/landing/css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="landing/css/bootstrap.css">
+	<link rel="stylesheet" href="/landing/css/bootstrap.css">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="landing/css/magnific-popup.css">
+	<link rel="stylesheet" href="/landing/css/magnific-popup.css">
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="landing/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="landing/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="/landing/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/landing/css/owl.theme.default.min.css">
 
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="landing/css/flexslider.css">
+	<link rel="stylesheet" href="/landing/css/flexslider.css">
 
 	<!-- Pricing -->
-	<link rel="stylesheet" href="landing/css/pricing.css">
+	<link rel="stylesheet" href="/landing/css/pricing.css">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="landing/css/style.css">
+	<link rel="stylesheet" href="/landing/css/style.css">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="logo.png">
+  <link rel="shortcut icon" href="/logo.png">
 
 	{{-- Font Awesome 5 --}}
-	<link href="fa/css/all.css" rel="stylesheet"> 
+	<link href="/fa/css/all.css" rel="stylesheet"> 
 	<!--load all styles -->
 
 	{{-- Style Datatables --}}
@@ -74,7 +74,7 @@
   @yield("css")
 
 	<!-- Modernizr JS -->
-	<script src="landing/js/modernizr-2.6.2.min.js"></script>
+	<script src="/landing/js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -106,31 +106,25 @@
 		<div class="top-menu">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-xs-4">
 						<div id="fh5co-logo"><a href="/">
-							{{-- SMPN 7  --}}
-							<img src="logo.png" style="height: 36px" alt="Logo SMPN 7 Bontang">
+							<img src="/logo.png" style="height: 36px" alt="Logo SMPN 7 Bontang">
 						</a></div>
 					</div>
-					<div class="col-xs-6 text-right menu-1">
+					<div class="col-xs-8 text-right menu-1">
 						<ul>
 							<li class="@yield("home")"><a href="/">Home</a></li>
 							<li class="@yield("profile")"><a href="/profile">Profile</a></li>
 							<li class="@yield("pegawai")"><a href="/pegawai">Pegawai</a></li>
 							<li class="@yield("perpustakaan")"><a href="/perpustakaan">Perpustakaan</a></li>
 							<li class="@yield("ekskul")"><a href="/ekskul">Ekskul</a></li>
-							<li class="has-dropdown">
-								<a href="/blog">Blog</a>
+							<li class="has-dropdown @yield('informasi')">
+								<a href="/informasi">Informasi</a>
 								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
+									<li><a href="#">Karya Siswa</a></li>
 								</ul>
 							</li>
 							<li class="@yield("contact")"><a href="/contact">Contact</a></li>
-							{{-- <li class="btn-cta"><a href="/login"><span>Login</span></a></li>
-							<li class="btn-cta"><a href="#"><span>Create a Course</span></a></li> --}}
 						</ul>
 					</div>
 				</div>
@@ -213,28 +207,28 @@
   @yield("js")
 	
 	<!-- jQuery -->
-	<script src="landing/js/jquery.min.js"></script>
+	<script src="/landing/js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="landing/js/jquery.easing.1.3.js"></script>
+	<script src="/landing/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="landing/js/bootstrap.min.js"></script>
+	<script src="/landing/js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="landing/js/jquery.waypoints.min.js"></script>
+	<script src="/landing/js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->
-	<script src="landing/js/jquery.stellar.min.js"></script>
+	<script src="/landing/js/jquery.stellar.min.js"></script>
 	<!-- Carousel -->
-	<script src="landing/js/owl.carousel.min.js"></script>
+	<script src="/landing/js/owl.carousel.min.js"></script>
 	<!-- Flexslider -->
-	<script src="landing/js/jquery.flexslider-min.js"></script>
+	<script src="/landing/js/jquery.flexslider-min.js"></script>
 	<!-- countTo -->
-	<script src="landing/js/jquery.countTo.js"></script>
+	<script src="/landing/js/jquery.countTo.js"></script>
 	<!-- Magnific Popup -->
-	<script src="landing/js/jquery.magnific-popup.min.js"></script>
-	<script src="landing/js/magnific-popup-options.js"></script>
+	<script src="/landing/js/jquery.magnific-popup.min.js"></script>
+	<script src="/landing/js/magnific-popup-options.js"></script>
 	<!-- Count Down -->
-	<script src="landing/js/simplyCountdown.js"></script>
+	<script src="/landing/js/simplyCountdown.js"></script>
 	<!-- Main -->
-	<script src="landing/js/main.js"></script>
+	<script src="/landing/js/main.js"></script>
 	
 	
 	{{-- CDN DataTables --}}

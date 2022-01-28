@@ -26,12 +26,6 @@ class InformasiController extends Controller
     public function editInformasi(Request $request)
     {
         if ($request->hasFile('gambar')) {
-            // remove old file
-            $oldFileName = Informasi::find($request->id)
-                ->gambar;
-            $oldFile = public_path() . '/upload/informasi/' . $oldFileName;
-            unlink($oldFile);
-
             $file = $request->file('gambar');
             $fileName = $file->getClientOriginalName();
             $destinationPath = public_path() . '/upload/informasi';
@@ -51,13 +45,7 @@ class InformasiController extends Controller
 
     public function hapusInformasi(Informasi $informasi)
     {
-        // remove file gambar
-        $file = public_path() . '/upload/informasi/' . $informasi->gambar;
-        if (file_exists($file)) {
-            unlink($file);
-        }
         $informasi->delete();
-
         return back()->with("pesan", "Informasi berhasil dihapus");
     }
 }
