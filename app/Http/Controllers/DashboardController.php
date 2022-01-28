@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Informasi;
 use App\Models\Karya;
+use App\Models\Pegawai;
 use App\Models\StrukturOrganisasi;
 use Illuminate\Http\Request;
 
@@ -39,5 +40,11 @@ class DashboardController extends Controller
     {
         $karya = Karya::all();
         return view('dashboard.karya', compact('karya'));
+    }
+
+    public function kelolaPegawai()
+    {
+        $pegawai = Pegawai::all();
+        return view('dashboard.pegawai', compact('pegawai'));
     }
 }

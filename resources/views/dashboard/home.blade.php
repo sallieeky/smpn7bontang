@@ -70,7 +70,7 @@
                 <a style="font-size: 1.2em" href="/kelola-karya"><i class="align-middle me-2" data-feather="image"></i><span class="align-middle">Kelola Karya Siswa</span></a>
               </div>
               <div class="col-md-4">
-                <a style="font-size: 1.2em" href="#"><i class="fas fa-chalkboard-teacher align-middle me-2"></i><span class="align-middle">Kelola Pegawai</span></a>
+                <a style="font-size: 1.2em" href="/kelola-pegawai"><i class="fas fa-chalkboard-teacher align-middle me-2"></i><span class="align-middle">Kelola Pegawai</span></a>
               </div>
             </div>
           </div>

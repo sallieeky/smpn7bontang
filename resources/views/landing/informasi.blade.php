@@ -39,7 +39,7 @@
 				@foreach ($informasi as $i)
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a class="blog-img-holder img-thumbnail" style="background-image: url(/upload/informasi/{{ $i->gambar }}); object-fit: contain;"></a>
+						<a class="blog-img-holder img-thumbnail" style="background-image: url(/upload/informasi/{{ $i->gambar }});"></a>
 						<div class="blog-text">
 							<h3><a href="/informasi/{{ $i->id }}">{{ $i->judul }}</a></h3>
 							<span class="posted_on">{{ $i->created_at->format('M. d Y') }}</span>

@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InformasiController;
 use App\Http\Controllers\KaryaController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,4 +48,9 @@ Route::middleware(['auth'])->group(function () {
   Route::post('/kelola-karya/tambah', [KaryaController::class, "tambahKarya"]);
   Route::post('/kelola-karya/edit', [KaryaController::class, "editKarya"]);
   Route::get('/kelola-karya/hapus/{karya}', [KaryaController::class, "hapusKarya"]);
+
+  Route::get('/kelola-pegawai', [DashboardController::class, "kelolaPegawai"]);
+  Route::post('/kelola-pegawai/tambah', [PegawaiController::class, "tambahPegawai"]);
+  Route::post('/kelola-pegawai/edit', [PegawaiController::class, "editPegawai"]);
+  Route::get('/kelola-pegawai/hapus/{pegawai}', [PegawaiController::class, "hapusPegawai"]);
 });

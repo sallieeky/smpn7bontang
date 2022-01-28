@@ -135,6 +135,9 @@
 
   @yield("content")
 
+	
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8088597227284!2d117.49337841426401!3d0.12477309990896805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x320a0d833ed3ec7d%3A0x690661a1d445ca31!2sSMP%20Negeri%207%20Bontang!5e0!3m2!1sen!2sid!4v1643332113838!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   <footer id="fh5co-footer" role="contentinfo" style="background-image: url(landing/images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">

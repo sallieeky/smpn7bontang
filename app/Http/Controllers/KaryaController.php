@@ -45,11 +45,6 @@ class KaryaController extends Controller
     public function editKarya(Request $request)
     {
         if ($request->hasFile('karya')) {
-            // remove old file
-            $oldFileData = Karya::find($request->id);
-            $oldFile = public_path() . '/upload/karya/' . $oldFileData->format . '/' . $oldFileData->karya;
-            unlink($oldFile);
-
 
             $ext = $request->file("karya")->getClientOriginalExtension();
             if ($ext == "mp3" || $ext == "m4a" || $ext == "wav") {
@@ -86,8 +81,6 @@ class KaryaController extends Controller
 
     public function hapusKarya(Karya $karya)
     {
-        $file = public_path() . '/upload/karya/' . $karya->format . '/' . $karya->karya;
-        unlink($file);
         $karya->delete();
         return back()->with("pesan", "Karya berhasil dihapus");
     }
