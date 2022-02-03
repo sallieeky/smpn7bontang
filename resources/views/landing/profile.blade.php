@@ -1,5 +1,5 @@
 @extends("root.landing")
-@section("title", "Profile")
+@section("title", "Profil")
 @section("profile", "active")
 @section("content")
 
@@ -39,6 +39,15 @@
         lapangan olahraga, kantin dan lainnya. Adapun pelajaran yang diberikan 
         meliputi semua mata pelajaran wajib sesuai kurikulum yang berlaku.
       </p>
+      {{-- alamat dan lain-lain --}}
+      <ul class="info">
+        <li><span class="first-block">Alamat:</span> Jl. K.S. Tubun No.29 Kecamatan Bontang Selatan, Kota Bontang</li>
+        <li><span class="first-block">Telepon:</span> (0548) 303-6153</li>
+        <li><span class="first-block">Email:</span>
+          <a href="mailto:smpneg7bontang@gmail.com">smpneg7bontang@gmail.com</a>
+        </li>
+      </ul>
+
     </div>
     <div class="col-md-6">
       <img class="img-responsive" src="landing/images/foto_gedung.jpg" alt="Free HTML5 Bootstrap Template">
@@ -46,7 +55,34 @@
   </div>
 </div>
 
-<div id="fh5co-course" class="fh5co-bg-section">
+<div id="fh5co-counter" class="fh5co-counters" style="background-image: url(/landing/images/img_bg_4.jpg);" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 text-center animate-box">
+            <span class="icon"><i class="icon-world"></i></span>
+            <span class="fh5co-counter js-counter" data-from="0" data-to="{{ $total }}" data-speed="5000" data-refresh-interval="50"></span>
+            <span class="fh5co-counter-label">Total Pegawai</span>
+          </div>
+          <div class="col-md-4 col-sm-6 text-center animate-box">
+            <span class="icon"><i class="icon-study"></i></span>
+            <span class="fh5co-counter js-counter" data-from="0" data-to="{{ $guru }}" data-speed="5000" data-refresh-interval="50"></span>
+            <span class="fh5co-counter-label">Total Guru</span>
+          </div>
+          <div class="col-md-4 col-sm-6 text-center animate-box">
+            <span class="icon"><i class="icon-user"></i></span>
+            <span class="fh5co-counter js-counter" data-from="0" data-to="{{ $tendik }}" data-speed="5000" data-refresh-interval="50"></span>
+            <span class="fh5co-counter-label">Total Tenaga Kependidikan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="fh5co-course">
   <div class="container">
     <div class="row animate-box">
       <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
@@ -60,90 +96,9 @@
         <img src="landing/images/{{ $so->gambar }}" width="100%" alt="Struktur Organisasi">
       </div>
     </div>
-    {{-- <div class="row">
-      <div class="col-md-6 animate-box">
-        <div class="course">
-          <a href="#" class="course-img" style="background-image: url(landing/images/project-1.jpg);">
-          </a>
-          <div class="desc">
-            <h3><a href="#">Web Master</a></h3>
-            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-            <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 animate-box">
-        <div class="course">
-          <a href="#" class="course-img" style="background-image: url(landing/images/project-2.jpg);">
-          </a>
-          <div class="desc">
-            <h3><a href="#">Business &amp; Accounting</a></h3>
-            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-            <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 animate-box">
-        <div class="course">
-          <a href="#" class="course-img" style="background-image: url(landing/images/project-3.jpg);">
-          </a>
-          <div class="desc">
-            <h3><a href="#">Science &amp; Technology</a></h3>
-            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-            <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 animate-box">
-        <div class="course">
-          <a href="#" class="course-img" style="background-image: url(landing/images/project-4.jpg);">
-          </a>
-          <div class="desc">
-            <h3><a href="#">Health &amp; Psychology</a></h3>
-            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-            <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 animate-box">
-        <div class="course">
-          <a href="#" class="course-img" style="background-image: url(landing/images/project-5.jpg);">
-          </a>
-          <div class="desc">
-            <h3><a href="#">Science &amp; Technology</a></h3>
-            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-            <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 animate-box">
-        <div class="course">
-          <a href="#" class="course-img" style="background-image: url(landing/images/project-6.jpg);">
-          </a>
-          <div class="desc">
-            <h3><a href="#">Health &amp; Psychology</a></h3>
-            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-            <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-          </div>
-        </div>
-      </div>
-    </div> --}}
   </div>
 </div>
 
-{{-- <div id="fh5co-register" style="background-image: url(landing/images/img_bg_2.jpg);">
-  <div class="overlay"></div>
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2 animate-box">
-      <div class="date-counter text-center">
-        <h2>Get 400 of Online Courses for Free</h2>
-        <h3>By Mike Smith</h3>
-        <div class="simply-countdown simply-countdown-one"></div>
-        <p><strong>Limited Offer, Hurry Up!</strong></p>
-        <p><a href="#" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
-      </div>
-    </div>
-  </div>
-</div> --}}
+
 
 @endsection

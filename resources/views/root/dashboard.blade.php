@@ -67,11 +67,6 @@
 						Authenticate
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="#">
-              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Kelola Admin</span>
-            </a>
-					</li>
-					<li class="sidebar-item">
 						<a class="sidebar-link" href="/logout">
               <i class="align-middle" data-feather="log-out"></i> <span class="align-middle">Log Out</span>
             </a>

@@ -19,13 +19,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [LandingController::class, "home"]);
+Route::get('/', [LandingController::class, "beranda"]);
 Route::get('/profile', [LandingController::class, "profile"]);
 Route::get('/pegawai', [LandingController::class, "pegawai"]);
 Route::get('/perpustakaan', [LandingController::class, "perpustakaan"]);
 Route::get('/ekskul', [LandingController::class, "ekskul"]);
-Route::get('/contact', [LandingController::class, "contact"]);
 
+Route::get('/contact', [LandingController::class, "contact"]);
+Route::post('/kirim-pesan', [LandingController::class, "kirimPesan"]);
+
+
+Route::get('/karya', [LandingController::class, "karya"]);
 Route::get('/informasi', [LandingController::class, "informasi"]);
 Route::get('/informasi/{informasi}', [LandingController::class, "informasiDetail"]);
 

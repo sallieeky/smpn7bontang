@@ -92,7 +92,7 @@
 				<div class="row">
 					<div class="col-xs-12 text-right">
 						<p class="site"><a href="https://www.smpn7bontang.sch.id/">smpn7bontang.sch.id</a></p>
-						<p class="num"><a href="tel:+6281243942304">Call: +628 124 394 2304</a></p>
+						<p class="num"><a href="tel:05483036153">Call: (0548) 303-6153</a></p>
 						<ul class="fh5co-social">
 							<li><a href="https://www.facebook.com/fanepagespenthu" target="_blank"><i class="icon-facebook2"></i></a></li>
 							<li><a href="https://www.youtube.com/channel/UCST574sp8ZziESzSmfCWi5g" target="_blank"><i class="icon-youtube"></i></a></li>
@@ -113,18 +113,18 @@
 					</div>
 					<div class="col-xs-8 text-right menu-1">
 						<ul>
-							<li class="@yield("home")"><a href="/">Home</a></li>
-							<li class="@yield("profile")"><a href="/profile">Profile</a></li>
+							<li class="@yield("beranda")"><a href="/">Beranda</a></li>
+							<li class="@yield("profile")"><a href="/profile">Profil</a></li>
 							<li class="@yield("pegawai")"><a href="/pegawai">Pegawai</a></li>
 							<li class="@yield("perpustakaan")"><a href="/perpustakaan">Perpustakaan</a></li>
 							<li class="@yield("ekskul")"><a href="/ekskul">Ekskul</a></li>
 							<li class="has-dropdown @yield('informasi')">
 								<a href="/informasi">Informasi</a>
 								<ul class="dropdown">
-									<li><a href="#">Karya Siswa</a></li>
+									<li><a href="/karya">Karya Siswa</a></li>
 								</ul>
 							</li>
-							<li class="@yield("contact")"><a href="/contact">Contact</a></li>
+							<li class="@yield("contact")"><a href="/contact">Kontak</a></li>
 						</ul>
 					</div>
 				</div>
@@ -142,63 +142,41 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row row-pb-md">
-				<div class="col-md-3 fh5co-widget">
-					<h3>About Education</h3>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+				<div class="col-md-6 fh5co-widget">
+					<h3>Tentan SMPN 7 Bontang</h3>
+					<p>Sekolah Menengah Pertama Negeri 7 Kota Bontang merupakan salah satu institusi pendidikan negeri tingkat menengah pertama yang sudah berdiri sejak 16 Juli 2007. Sekolah Menengah Pertama Negeri 7 Kota Bontang berlokasi di Jl. K.S. Tubun No.29 Kecamatan Bontang Selatan, Kota Bontang yang telah terakreditasi A.</p>
 				</div>
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-					<h3>Learning</h3>
+				<div class="col-md-2 col-sm-6 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Halaman</h3>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Course</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Meetups</a></li>
+						<li><a href="/">Beranda</a></li>
+						<li><a href="/profile">Profil</a></li>
+						<li><a href="/pegawai">Pegawai</a></li>
+						<li><a href="/perpustakaan">Perpustakaan</a></li>
+						<li><a href="/ekskul">Ekskul</a></li>
+						<li><a href="/informasi">Informasi</a></li>
+						<li><a href="/karya">Karya</a></li>
+						<li><a href="/contact">Kontak</a></li>
 					</ul>
 				</div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-					<h3>Learn &amp; Grow</h3>
+				<div class="col-md-2 col-sm-6 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Sosial Media</h3>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">Handbook</a></li>
-						<li><a href="#">Held Desk</a></li>
+						<li><a href="https://www.facebook.com/fanepagespenthu" target="_blank"><i class="icon-facebook2"></i> Facebook</a></li>
+							<li><a href="https://www.youtube.com/channel/UCST574sp8ZziESzSmfCWi5g" target="_blank"><i class="icon-youtube"></i> Youtube</a></li>
+							<li><a href="https://www.instagram.com/smpn7_bontang/" target="_blank"><i class="icon-instagram"></i> Instagram</a></li>
+							<li><a href="#"><i class="icon-github"></i> Github</a></li>
 					</ul>
 				</div>
-
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-					<h3>Engage us</h3>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Marketing</a></li>
-						<li><a href="#">Visual Assistant</a></li>
-						<li><a href="#">System Analysis</a></li>
-						<li><a href="#">Advertise</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-					<h3>Legal</h3>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Find Designers</a></li>
-						<li><a href="#">Find Developers</a></li>
-						<li><a href="#">Teams</a></li>
-						<li><a href="#">Advertise</a></li>
-						<li><a href="#">API</a></li>
-					</ul>
-				</div>
-			</div>
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp; <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>
+						<small class="block">&copy; 2022 Sekolah Menengah Pertama Negeri 7 Bontang</small> 
 					</p>
 				</div>
 			</div>
-
 		</div>
 	</footer>
 	</div>

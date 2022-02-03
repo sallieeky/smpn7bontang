@@ -52,6 +52,10 @@ class User extends Authenticatable
     }
     public function strukturOrganisasi()
     {
-        return $this->hasOne(StrukturOrganisasi::class);
+        return $this->hasMany(StrukturOrganisasi::class);
+    }
+    public function pegawai()
+    {
+        return $this->hasMany(Pegawai::class);
     }
 }

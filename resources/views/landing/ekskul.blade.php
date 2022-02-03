@@ -1,5 +1,6 @@
 @extends("root.landing")
 @section("title", "Ekskul")
+@section("ekskul", 'active')
 @section("content")
 
 <aside id="fh5co-hero">
@@ -22,7 +23,104 @@
     </div>
 </aside>
 
-<div id="fh5co-pricing" class="fh5co-bg-section">
+<div class="container" style="margin-top: 50px; margin-bottom: 50px" >
+  <div class="row">
+    <div class="col-md-12">
+      <h1>List Ekskul SMP Negeri 7 Bontang</h1>
+      <hr>
+      {{-- card --}}
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="col-md-4">
+                <img src="logo2.png" class="img-responsive" alt="Responsive image">
+              </div>
+              <div class="col-md-8">
+                <h4 class="card-title">Ekskul Pramuka</h4>
+                <p class="card-text">Ekskul Pramuka adalah ekskul yang bergerak dalam bidang olahraga yang mengajar tentang kemampuan diri, keterampilan, dan kemampuan bertindak serta kemampuan berkomunikasi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="col-md-4">
+                <img src="logo2.png" class="img-responsive" alt="Responsive image">
+              </div>
+              <div class="col-md-8">
+                <h5 class="card-title">Ekskul Multimedia</h5>
+                <p class="card-text">Ekskul Multimedia adalah ekskul yang bergerak dalam bidang multimedia yang mempelajari tentang bagaimana memenfaatkan teknologi media digital dalam proses belajar mengajar dan juga meningkatkan kreatifitas dalam media digital</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="col-md-4">
+                <img src="logo2.png" class="img-responsive" alt="Responsive image">
+              </div>
+              <div class="col-md-8">
+                <h5 class="card-title">Ekskul Multimedia</h5>
+                <p class="card-text">Ekskul Multimedia adalah ekskul yang bergerak dalam bidang multimedia yang mempelajari tentang bagaimana memenfaatkan teknologi media digital dalam proses belajar mengajar dan juga meningkatkan kreatifitas dalam media digital</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="col-md-4">
+                <img src="logo2.png" class="img-responsive" alt="Responsive image">
+              </div>
+              <div class="col-md-8">
+                <h5 class="card-title">Ekskul Multimedia</h5>
+                <p class="card-text">Ekskul Multimedia adalah ekskul yang bergerak dalam bidang multimedia yang mempelajari tentang bagaimana memenfaatkan teknologi media digital dalam proses belajar mengajar dan juga meningkatkan kreatifitas dalam media digital</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="col-md-4">
+                <img src="logo2.png" class="img-responsive" alt="Responsive image">
+              </div>
+              <div class="col-md-8">
+                <h5 class="card-title">Ekskul Multimedia</h5>
+                <p class="card-text">Ekskul Multimedia adalah ekskul yang bergerak dalam bidang multimedia yang mempelajari tentang bagaimana memenfaatkan teknologi media digital dalam proses belajar mengajar dan juga meningkatkan kreatifitas dalam media digital</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+    </div>
+  </div>
+</div>
+
+
+{{-- <div id="fh5co-pricing" class="fh5co-bg-section">
   <div class="container">
     <div class="row animate-box">
       <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
@@ -137,6 +235,6 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 @endsection
