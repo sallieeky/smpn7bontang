@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Informasi;
 use App\Models\Karya;
 use App\Models\Pegawai;
+use App\Models\Sambutan;
 use App\Models\StrukturOrganisasi;
 use Illuminate\Http\Request;
 
@@ -28,6 +29,12 @@ class DashboardController extends Controller
         $file->move($destinationPath, $fileName);
 
         return redirect()->back()->with('pesan', 'Struktur organisasi berhasil diubah');
+    }
+
+    public function kelolaBeranda()
+    {
+        $sambutan = Sambutan::latest()->first();
+        return view('dashboard.beranda', compact('sambutan'));
     }
 
     public function kelolaInformasi()

@@ -48,6 +48,11 @@
               <i class="fas fa-tachometer-alt align-middle"></i> <span class="align-middle">Dashboard</span>
             </a>
 					</li>					
+					<li class="sidebar-item @yield("beranda-active")">
+						<a class="sidebar-link" href="/kelola-beranda">
+              <i class="far fa-file-alt align-middle"></i> <span class="align-middle">Kelola Beranda</span>
+            </a>
+					</li>					
 					<li class="sidebar-item @yield("informasi-active")">
 						<a class="sidebar-link" href="/kelola-informasi">
               <i class="far fa-file-alt align-middle"></i> <span class="align-middle">Kelola Informasi</span>

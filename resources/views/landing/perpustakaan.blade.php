@@ -120,7 +120,7 @@
             3. Menumbuhkan minat baca,mengembangakan ide dan kreatifitas. <br>
             4. Mendidik siswa agar memelihara dan memanfaatkan bahan bacaan secara tepat guna. <br>
             5. Meningkatkan kualitas dan kuantitas koleksi buku bacaan dan referensi. <br>
-            6. Meningkatak frekeunsi kunjungan ke perpustakaan sekolah melalui berbagai cara. <br>
+            6. Meningkatkan frekeunsi kunjungan ke perpustakaan sekolah melalui berbagai cara. <br>
           </span>
         </p>
       </div>

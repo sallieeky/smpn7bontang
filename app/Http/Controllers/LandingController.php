@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Informasi;
 use App\Models\Karya;
 use App\Models\Pegawai;
+use App\Models\Sambutan;
 use App\Models\StrukturOrganisasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -14,7 +15,8 @@ class LandingController extends Controller
     public function beranda()
     {
         $informasi = Informasi::orderBy('created_at', 'desc')->take(6)->get();
-        return view("landing.home", compact('informasi'));
+        $sambutan = Sambutan::latest()->first();
+        return view("landing.home", compact('informasi', 'sambutan'));
     }
 
     public function profile()

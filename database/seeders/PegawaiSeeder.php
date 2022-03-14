@@ -136,19 +136,19 @@ class PegawaiSeeder extends Seeder
 
         // tendik
         $nama_tendik = [
+            'Muhiddin P',
             'Asropa',
             'Karyana',
             'Minarsih',
-            'Muhiddin P',
             'Supriono',
             'Widyaningsih',
         ];
 
         $nip_tendik = [
+            197004122005021002,
             197911282010012001,
             '-',
             '-',
-            197004122005021002,
             '-',
             '-',
         ];
@@ -163,10 +163,10 @@ class PegawaiSeeder extends Seeder
         ];
 
         $jabatan_tendik = [
+            'Kepala Sekolah',
             'Tenaga Administrasi Sekolah',
             'Tenaga Administrasi Sekolah',
             'Tenaga Perpustakaan',
-            'Kepala Sekolah',
             'Tenaga Administrasi Sekolah',
             'Tenaga Administrasi Sekolah',
         ];
