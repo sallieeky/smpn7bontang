@@ -6,7 +6,7 @@
 <aside id="fh5co-hero">
   <div class="flexslider">
     <ul class="slides">
-       <li style="background-image: url(landing/images/img_bg_4.jpg);">
+       <li style="background-image: url(landing/images/ekskul1.JPG); background-position: center">
          <div class="overlay-gradient"></div>
          <div class="container">
            <div class="row">
@@ -34,10 +34,10 @@
           <div class="card">
             <div class="card-body">
               <div class="col-md-4">
-                <img src="logo2.png" class="img-responsive" alt="Responsive image">
+                <img src="landing/images/logo_pramuka.png" class="img-responsive" style="max-height: 200px" alt="Responsive image">
               </div>
               <div class="col-md-8">
-                <h4 class="card-title">Ekskul Pramuka</h4>
+                <h5 class="card-title">Ekskul Pramuka</h5>
                 <p class="card-text">Ekskul Pramuka adalah ekskul yang bergerak dalam bidang olahraga yang mengajar tentang kemampuan diri, keterampilan, dan kemampuan bertindak serta kemampuan berkomunikasi.</p>
               </div>
             </div>
@@ -51,7 +51,7 @@
           <div class="card">
             <div class="card-body">
               <div class="col-md-4">
-                <img src="logo2.png" class="img-responsive" alt="Responsive image">
+                <img src="landing/images/logo_multimedia.png" style="max-height: 200px" class="img-responsive" alt="Responsive image">
               </div>
               <div class="col-md-8">
                 <h5 class="card-title">Ekskul Multimedia</h5>
@@ -68,11 +68,11 @@
           <div class="card">
             <div class="card-body">
               <div class="col-md-4">
-                <img src="logo2.png" class="img-responsive" alt="Responsive image">
+                <img src="landing/images/logo_volley.png" style="max-height: 200px" class="img-responsive" alt="Responsive image">
               </div>
               <div class="col-md-8">
-                <h5 class="card-title">Ekskul Multimedia</h5>
-                <p class="card-text">Ekskul Multimedia adalah ekskul yang bergerak dalam bidang multimedia yang mempelajari tentang bagaimana memenfaatkan teknologi media digital dalam proses belajar mengajar dan juga meningkatkan kreatifitas dalam media digital</p>
+                <h5 class="card-title">Ekskul Voli</h5>
+                <p class="card-text">Ekstrakurikuler bola voli merupakan media untuk mendorong prestasi non akademik, pertumbuhan fisik dan perkembangan psikis, meningkatkan kemampuan dan keterampilan dalam bermain bola voli supaya lebih baik, serta pembiasaan pola hidup sehat dengan berolahraga.</p>
               </div>
             </div>
           </div>
@@ -85,11 +85,11 @@
           <div class="card">
             <div class="card-body">
               <div class="col-md-4">
-                <img src="logo2.png" class="img-responsive" alt="Responsive image">
+                <img src="landing/images/logo_futsal.png" style="max-height: 200px" class="img-responsive" alt="Responsive image">
               </div>
               <div class="col-md-8">
-                <h5 class="card-title">Ekskul Multimedia</h5>
-                <p class="card-text">Ekskul Multimedia adalah ekskul yang bergerak dalam bidang multimedia yang mempelajari tentang bagaimana memenfaatkan teknologi media digital dalam proses belajar mengajar dan juga meningkatkan kreatifitas dalam media digital</p>
+                <h5 class="card-title">Ekskul Futsal</h5>
+                <p class="card-text">Ekstrakurikuler futsal diadakan dengan tujuan menyediakan wadah untuk siswa menyalurkan hobinya dan menghadirkan corak positif kepada para siswa yaitu sifat-sifat sportifitas serta mencetak bibit-bibit baru olahragawan yang berprestasi di tingkat lokal, nasional maupun internasional.</p>
               </div>
             </div>
           </div>
@@ -102,11 +102,11 @@
           <div class="card">
             <div class="card-body">
               <div class="col-md-4">
-                <img src="logo2.png" class="img-responsive" alt="Responsive image">
+                <img src="landing/images/logo_tari.png" style="max-height: 200px" class="img-responsive" alt="Responsive image">
               </div>
               <div class="col-md-8">
-                <h5 class="card-title">Ekskul Multimedia</h5>
-                <p class="card-text">Ekskul Multimedia adalah ekskul yang bergerak dalam bidang multimedia yang mempelajari tentang bagaimana memenfaatkan teknologi media digital dalam proses belajar mengajar dan juga meningkatkan kreatifitas dalam media digital</p>
+                <h5 class="card-title">Ekskul Tari</h5>
+                <p class="card-text">Ekskul seni tari adalah wadah bagi siswi yang memiliki kemampuan dalam menari. Sehingga mereka bisa mengembangkan dan mengekspresikan diri mereka melalui seni tari.</p>
               </div>
             </div>
           </div>

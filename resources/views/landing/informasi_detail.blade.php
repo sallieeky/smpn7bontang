@@ -27,6 +27,11 @@
   <div class="row">
     <div class="col-md-8">
       <h1>{{ $informasi->judul }}</h1>
+      <p class="text-muted">
+        Dibuat pada <br>
+        <i class="fa fa-calendar"></i>
+        {{ $informasi->created_at->formatLocalized('%A, %d %B %Y') }}
+      </p>
       <img class="img-fluid" style="margin-bottom: 32px" height="300" src="/upload/informasi/{{ $informasi->gambar }}" alt="Foto">
       <p>{!! $informasi->isi !!}</p>
     </div>
@@ -39,7 +44,7 @@
             @foreach ($informasiRandom as $ir)
             <li>
               <label>{{ $ir->judul }}</label>
-              <a href="#"><img class="img img-thumbnail" src="/upload/informasi/{{ $ir->gambar }}" width="100%" alt="{{ $ir->judul }}"></a>
+              <a href="/informasi/{{ $ir->id }}"><img class="img img-thumbnail" src="/upload/informasi/{{ $ir->gambar }}" width="100%" alt="{{ $ir->judul }}"></a>
             </li>
             <hr>
             @endforeach

@@ -1,5 +1,5 @@
 @extends("root.landing")
-@section("title", "Contact")
+@section("title", "Kontak")
 @section("contact", "active")
 @section("content")
 

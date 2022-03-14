@@ -5,7 +5,7 @@
 	<aside id="fh5co-hero">
 		<div class="flexslider">
 			<ul class="slides">
-		   	<li style="background-image: url(landing/images/banner1.jpg);">
+		   	<li style="background-image: url(landing/images/sekolah2.jpeg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -17,7 +17,7 @@
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(landing/images/img_bg_2.jpg);">
+		   	<li style="background-image: url(landing/images/banner1.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -29,7 +29,7 @@
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(landing/images/img_bg_3.jpg);">
+		   	<li style="background-image: url(landing/images/sekolah3.jpeg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -50,6 +50,10 @@
 		<div class="row">
 			<div class="col-md-8">
 				<h3 class="text-bold">SAMBUTAN KEPALA SEKOLAH</h3>
+				<figure>
+					<img src="landing/images/muhidin.JPG" alt="sambutan kepala sekolah" class="img-responsive">
+					<figcaption><small>Kepala sekolah SMP Negeri 7 Bontang</small></figcaption>
+				</figure>
 				<p class="text-justify">
 					<i>Assalaamu’alaikum wr. wb</i>
 					<br><br>

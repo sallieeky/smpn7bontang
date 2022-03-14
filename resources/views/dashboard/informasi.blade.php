@@ -87,7 +87,7 @@
                 </div>
                 <div class="form-group mb-3">
                   <label for="gambar">Gambar</label>
-                  <input type="file" class="form-control" id="gambar" name="gambar" accept="image/*">
+                  <input type="file" class="form-control" id="gambar" name="gambar" accept="image/*" required>
                 </div>
                 <button type="submit" class="btn btn-primary" id="tambahBtn">Tambah</button>
               </form>

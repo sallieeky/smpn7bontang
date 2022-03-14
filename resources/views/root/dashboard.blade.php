@@ -45,7 +45,7 @@
 					</li>
 					<li class="sidebar-item @yield("dashboard-active")">
 						<a class="sidebar-link" href="/dashboard">
-              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+              <i class="fas fa-tachometer-alt align-middle"></i> <span class="align-middle">Dashboard</span>
             </a>
 					</li>					
 					<li class="sidebar-item @yield("informasi-active")">
@@ -55,7 +55,7 @@
 					</li>					
 					<li class="sidebar-item @yield("karya-active")">
 						<a class="sidebar-link" href="/kelola-karya">
-              <i class="align-middle" data-feather="image"></i> <span class="align-middle">Kelola Karya</span>
+              <i class="align-middle fab fa-artstation"></i> <span class="align-middle">Kelola Karya</span>
             </a>
 					</li>
 					<li class="sidebar-item @yield("pegawai-active")">
@@ -68,7 +68,7 @@
 					</li>
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="/logout">
-              <i class="align-middle" data-feather="log-out"></i> <span class="align-middle">Log Out</span>
+              <i class="fas fa-sign-out-alt align-middle"></i> <span class="align-middle">Log Out</span>
             </a>
 					</li>
 				</ul>

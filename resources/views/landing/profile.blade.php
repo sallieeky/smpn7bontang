@@ -6,7 +6,7 @@
 <aside id="fh5co-hero">
   <div class="flexslider">
     <ul class="slides">
-       <li style="background-image: url(landing/images/img_bg_4.jpg);">
+       <li style="background-image: url(landing/images/sekolah4.jpeg); background-position: center">
          <div class="overlay-gradient"></div>
          <div class="container">
            <div class="row">

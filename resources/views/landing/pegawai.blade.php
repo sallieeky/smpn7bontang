@@ -1,12 +1,12 @@
 @extends("root.landing")
-@section("title", "Guru")
+@section("title", "Pegawai")
 @section("pegawai", "active")
 @section("content")
 
 <aside id="fh5co-hero">
   <div class="flexslider">
     <ul class="slides">
-       <li style="background-image: url(landing/images/guru_hero.jpg);">
+       <li style="background-image: url(landing/images/guru1.JPG);">
          <div class="overlay-gradient"></div>
          <div class="container">
            <div class="row">
